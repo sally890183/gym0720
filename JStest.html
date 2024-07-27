@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+</head>
+
+<body>
+    <h1>Hello! JavaScript</h1>
+
+
+
+
+
+    <script>
+
+        let x = 10;
+        let y = 20;
+        const PI = 3.1415926;  //const 設定某值為不可變動
+        x = 20
+        let z = x + y;
+        console.log(z);
+        console.log(x - y)
+
+        // →代表單行註解
+
+        /**
+         * prompt 提示輸入 → python 的 input
+         * log 輸出
+         * 字串可以跟數值進行運算
+         * 使用let 進行變數宣告
+         * typeof 觀察變數型態
+         * 
+         * document.write 文本輸出
+         * alert 彈跳輸出
+         */
+
+        /**→多行註解 */
+
+        //取得圓面積邏輯
+        let radius = prompt('請輸入半徑:');
+        console.log(typeof (radius));
+        let area = radius ** 2 * PI;
+        let result = '半徑為:' + radius + '面積為:' + area;
+        console.log(result);
+        document.write(result);
+        alert(result);
+
+
+
+
+        let name = prompt('請輸入姓名');
+        let height = prompt('請輸入身高');
+        let weight = prompt('請輸入體重');
+        let BMI = weight / (height / 100) / (height / 100);
+        console.log(name + '的BMI為' + BMI);
+        document.write('<br>' + '<u>' + name + '的BMI為' + BMI.toFixed(3));  //<br> 網頁語言換行 <u>網頁語言底線    ~.toFixed()→ｐｙ的round()
+
+
+        document.write(`<h1>${name}的BMI為</h1><li>${height}</li><li>${weight}</li><li>${BMI.toFixed(3)}</li>`)
+        document.write(`<li>${height}</li>`)
+        document.write(`<li>${weight}</li>`)
+        document.write(`<li>${BMI.toFixed(3)}</li>`)
+
+
+    </script>
+
+
+
+</body>
+
+</html>
