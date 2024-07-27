@@ -1,45 +1,125 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+<!--我是註解-->
+<!-- . →class ； #→id -->
 
 <head>
     <meta charset="utf-8">
     <title>健身網站</title>
+    <style>
+        body {
+            background-color: rgb(164, 238, 207);
+            color: coral;
+            font-family: '新細明體', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .line1 {
+            text-align: left;
+        }
+
+        .banner {
+            color: black;
+        }
+
+        .title {
+            color: rgb(32, 29, 238);
+            background-color: rgb(240, 194, 194);
+            width: 500px;
+            text-align: center;
+        }
+
+        #title {
+            background-color: rgb(236, 180, 217);
+            color: white;
+            font-size: 48px;
+            margin: 2px 6px 4px 80px;
+            padding: 15px 6px 15px 150px;
+            display: inline-block;
+            text-align: center;
+            border: 2px black solid;
+        }
+
+        .slogan {
+            background-color: black;
+            color: white;
+            border: 2px red solid;
+        }
+
+        .bmi-table {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            width: 1000px;
+            height: 200px;
+            margin: 2px auto;
+        }
+
+        .bmi-table thead {
+            background-color: red;
+            color: white;
+            font-size: 10px;
+        }
+
+        .bmi-table tbody {
+            background-color: black;
+            color: aliceblue;
+            font-size: 15px;
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
 </head>
-<!--內容顯示區-->
 <!--我是註解-->
+<!--以下為內容顯示區-->
+
 
 <body>
-    <h1>我愛健身網站</h1>
-    <p>
-    <h3>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
-    </h3>
+    <h1 class='title'>我愛健身網站</h1>
+    <div style="background-color: rgb(243, 216, 148);">
+        <p>
+        <h3>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+        </h3>
 
-    <p>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。
-    </p>
-    <p><em>如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
-            舞臺上或者是電影螢幕上綻放光彩。</em><u><b>答案就是堅持運動健身!</b></u>
-    </p>
+        <p>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。
+        </p>
+        <p><em style="background-color: rgb(80, 176, 255);">如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
+                舞臺上或者是電影螢幕上綻放光彩。</em>
+
+
+            <span class="slogan">
+                <u><b>答案就是堅持運動健身!</b></u></span>
+        </p>
+    </div>
+
     <img width='100%'
         src="https://preview.520cc.com/auto_machine/20201216/3f58b0e6-1228-4134-8533-0423bc600e13.jpg!w800_520cc_water"
         alt='找不到圖片'>
     <hr>
 
-    <h2>健身的10個好處</h2>
-    <ul>
-        <li>增加基礎代謝率</li>
-        <li>預防疾病和提高免疫力</li>
-        <li>改善心情</li>
-        <li>改善睡眠</li>
-        <li>增加自信</li>
-        <li>增強記憶力</li>
-        <li>增強心肺能力</li>
-        <li>提升睡眠品質</li>
-        <li>釋放工作的壓力</li>
-        <li>增加肌肉助於減肥</li>
-    </ul>
-    <hr>
+    <h2 class="banner">健身的10個好處</h2>
+    <div style="background-color: lightgoldenrodyellow;">
+        <div class='line1' ;>
+            <ul>
+                <li>增加基礎代謝率</li>
+                <li>預防疾病和提高免疫力</li>
+                <li>改善心情</li>
+                <li>改善睡眠</li>
+                <li>增加自信</li>
+                <li>增強記憶力</li>
+                <li>增強心肺能力</li>
+                <li>提升睡眠品質</li>
+                <li>釋放工作的壓力</li>
+                <li>增加肌肉助於減肥</li>
+            </ul>
+            <hr>
+        </div>
+    </div>
 
-    <h2>好文章連結</h2>
+    <h2 id="title">好文章連結</h2>
     <ul>
         <li><a target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">
                 健身初學者必看！10個常見的健身迷思</a></li>
@@ -58,8 +138,10 @@
     <img width='30%' src="img\下載.jfif" alt='找不到圖片'>
     <hr>
 
-    <h2>一天所需卡路里</h2>
-    <table border="1">
+    <h2 style="background-color: thistle;">一天所需卡路里</h2>
+
+    <table border="1" class="bmi-table">
+
         <thead>
             <tr>
                 <th>每天活動量</th>
@@ -89,6 +171,7 @@
             </tr>
         </tbody>
     </table>
+
     <p>
         <a href="bmi.html">
             <b>計算BMI: &copy;</b><a>
